@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 400px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.6);
+    text-align: center;
+}
+
+/* Chat Box */
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #252525;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* User & Bot Messages */
+.user-message, .bot-message {
+    max-width: 75%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background: #00aaff;
+    align-self: flex-end;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 170, 255, 0.8);
+}
+
+.bot-message {
+    background: #009688;
+    align-self: flex-start;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 255, 170, 0.8);
+}
+
+/* Typing Animation */
+.typing {
+    font-style: italic;
+    color: #aaa;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #333;
+    color: #fff;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #00aaff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0077cc;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 450px) {
+    .chat-container {
+        width: 90%;
+    }
+
+    .chat-box {
+        height: 250px;
+    }
+}
